@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/unnamed_(2).jpg"
+                src="/logo.jpg"
                 alt="Desired Dumpsters"
                 className="h-10 w-auto object-contain"
                 style={{ filter: 'brightness(0) invert(1)' }}
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
         <div className="border-t border-navy-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-navy-200 text-sm">
-              &copy; 2024 Desired Dumpsters. All rights reserved.
+              &copy; 2025 Desired Dumpsters. All rights reserved.
             </p>
             <div className="text-navy-200 text-sm">
               No Hidden Fees | Transparent Pricing | Locally Owned

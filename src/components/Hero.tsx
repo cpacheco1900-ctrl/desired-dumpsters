@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
                 No Hidden Fees
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                West Michigan's Most Trusted Dumpster Rental
+                West Michigan's Most Trusted Dumpster Rental & Cleanout Service
               </h1>
               <p className="text-xl text-navy-100 mt-4 leading-relaxed">
                 Fast, reliable dumpster rentals and junk removal with transparent, flat-rate pricing.
@@ -57,8 +57,8 @@ export const Hero: React.FC = () => {
           <div className="relative animate-slide-up">
             <div className="relative rounded-xl overflow-hidden shadow-card-lg">
               <img
-                src="/unnamed.jpg"
-                alt="Dumpster rental service"
+                src="/dumpster.jpg"
+                alt="Desired Dumpsters roll-off dumpster rental"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/40 to-transparent" />

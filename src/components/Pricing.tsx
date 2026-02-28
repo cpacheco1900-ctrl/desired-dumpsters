@@ -25,7 +25,7 @@ const pricingPlans = [
     features: [
       'Flat-rate delivery included',
       '3-day rental period',
-      '$30 per additional day',
+      '$25 per additional day',
       'Most versatile option',
       'Up to 20-yard capacity',
     ],
@@ -76,7 +76,7 @@ export const Pricing: React.FC = () => {
 
                 <div className="rounded-lg overflow-hidden h-48 bg-gray-100">
                   <img
-                    src="/unnamed.jpg"
+                    src="/dumpster.jpg"
                     alt={plan.name}
                     className="w-full h-full object-cover"
                   />
