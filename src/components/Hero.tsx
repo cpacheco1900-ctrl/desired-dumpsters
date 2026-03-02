@@ -18,8 +18,18 @@ export const Hero: React.FC = () => {
   ];
 
   return (
-    <section id="home" className="pt-24 pb-12 md:pb-20 bg-gradient-to-b from-navy-600 to-navy-500 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="home"
+      className="pt-24 pb-12 md:pb-20 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(https://images.pexels.com/photos/159519/houe-home-modern-building-159519.jpeg?auto=compress&cs=tinysrgb&w=1200)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-600/95 to-navy-500/85 z-10" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-white space-y-6 animate-fade-in">
             <div>

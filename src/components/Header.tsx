@@ -44,10 +44,9 @@ export const Header: React.FC = () => {
           <div className="flex items-center justify-between h-16 md:h-20">
             <div className="flex items-center gap-2">
               <img
-                src="/logo.jpg"
+                src="/Logo_Red_Truck_circle.jpg"
                 alt="Desired Dumpsters"
-                className="h-10 md:h-12 w-auto object-contain"
-                style={{ filter: 'brightness(0) invert(1)' }}
+                className="h-12 md:h-14 w-auto object-contain"
               />
             </div>
 
