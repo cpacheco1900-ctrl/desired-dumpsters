@@ -41,12 +41,12 @@ export const Header: React.FC = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-24 md:h-28">
             <div className="flex items-center gap-2">
               <img
                 src="/Logo_Red_Truck_circle.jpg"
                 alt="Desired Dumpsters"
-                className="h-16 md:h-20 w-auto object-contain"
+               className="h-24 md:h-28 w-auto object-contain"
               />
             </div>
 
