@@ -7,26 +7,26 @@ import { Badge } from './Badge';
 
 const pricingPlans = [
   {
-    name: '15-Yard Dumpster',
+    name: '7-15 Yard Dumpster',
     price: 375,
     popular: false,
     features: [
       'Flat-rate delivery included',
       '3-day rental period',
       '$25 per additional day',
-      'Perfect for smaller projects',
+      'Great for residential projects',
       'Up to 15-yard capacity',
     ],
   },
   {
-    name: '20-Yard Dumpster',
+    name: '2-20 Yard Dumpster',
     price: 400,
-    popular: true,
+    popular: false,
     features: [
       'Flat-rate delivery included',
       '3-day rental period',
       '$25 per additional day',
-      'Most versatile option',
+      'Ideal for larger cleanouts',
       'Up to 20-yard capacity',
     ],
   },
