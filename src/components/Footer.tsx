@@ -38,13 +38,13 @@ export const Footer: React.FC = () => {
 
           <div>
             <h4 className="font-bold text-lg mb-4 text-orange-400">Quick Links</h4>
-            <nav className="space-y-2">
+            <nav className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-navy-100 hover:text-orange-400 transition-colors text-sm"
+                  className="block text-navy-100 hover:text-orange-400 transition-colors text-sm"
                 >
                   {link.name}
                 </a>
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
         <div className="border-t border-navy-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-navy-200 text-sm">
-              &copy; 2025 Desired Dumpsters. All rights reserved.
+              &copy; 2026 Desired Dumpsters. All rights reserved.
             </p>
             <div className="text-navy-200 text-sm">
               No Hidden Fees | Transparent Pricing | Locally Owned
