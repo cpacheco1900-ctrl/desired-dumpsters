@@ -7,7 +7,7 @@ import { Badge } from './Badge';
 
 const pricingPlans = [
   {
-    name: '7-15 Yard Dumpster',
+    name: '15 Yard Dumpster',
     price: 375,
     popular: false,
     features: [
@@ -19,7 +19,7 @@ const pricingPlans = [
     ],
   },
   {
-    name: '2-20 Yard Dumpster',
+    name: '20 Yard Dumpster',
     price: 400,
     popular: false,
     features: [
