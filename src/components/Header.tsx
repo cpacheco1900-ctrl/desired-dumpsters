@@ -42,12 +42,15 @@ export const Header: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24 md:h-28">
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col items-center justify-center">
               <img
-                src="/Final_PnG_Red_Dumpster_transparent.png"
+                src="/transparent-logo.png"
                 alt="Desired Dumpsters"
-               className="h-32 md:h-40 w-auto object-contain"
+                className="h-14 md:h-16 w-auto object-contain"
               />
+              <span className="text-white font-bold text-sm md:text-base tracking-wide leading-tight">
+                Desired Dumpsters
+              </span>
             </div>
 
             <nav className="hidden md:flex items-center gap-8">
