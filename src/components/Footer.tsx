@@ -25,10 +25,9 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/logo.jpg"
+                src="/transparent-logo.png"
                 alt="Desired Dumpsters"
                 className="h-10 w-auto object-contain"
-                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </div>
             <p className="text-navy-100 text-sm">
