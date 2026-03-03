@@ -10,6 +10,8 @@ const pricingPlans = [
     name: '15 Yard Dumpster',
     price: 375,
     popular: false,
+    dimensions: '14ft long × 7.5ft wide × 4.5ft high',
+    description: 'Perfect for small home cleanouts, bathroom or kitchen remodels, and single-room renovations.',
     features: [
       'Flat-rate delivery included',
       '3-day rental period',
@@ -22,6 +24,8 @@ const pricingPlans = [
     name: '20 Yard Dumpster',
     price: 400,
     popular: false,
+    dimensions: '22ft long × 7.5ft wide × 4.5ft high',
+    description: 'Ideal for whole-home cleanouts, large construction projects, deck removals, and roofing jobs.',
     features: [
       'Flat-rate delivery included',
       '3-day rental period',
@@ -66,7 +70,9 @@ export const Pricing: React.FC = () => {
 
               <div className={`p-8 space-y-8 ${plan.popular ? 'pt-16' : ''}`}>
                 <div>
-                  <h3 className="text-2xl font-bold text-navy-900 mb-4">{plan.name}</h3>
+                  <h3 className="text-2xl font-bold text-navy-900 mb-1">{plan.name}</h3>
+                  <p className="text-sm text-orange-500 font-semibold mb-2">{plan.dimensions}</p>
+                  <p className="text-gray-600 text-sm mb-4">{plan.description}</p>
                   <div className="flex items-baseline gap-2 mb-4">
                     <span className="text-5xl font-bold text-orange-500">${plan.price}</span>
                     <span className="text-gray-600 font-semibold">for 3 days</span>
