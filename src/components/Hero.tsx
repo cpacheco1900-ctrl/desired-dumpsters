@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col items-center md:items-start">
                   <stat.icon className="text-orange-400 mb-2" size={24} />
-                  <p className="text-sm font-semibold text-orange-400">{stat.label}</p>
+                  <p className="text-sm font-semibold text-orange-400 whitespace-nowrap">{stat.label}</p>
                   <p className="text-xs text-navy-100">{stat.value}</p>
                 </div>
               ))}
