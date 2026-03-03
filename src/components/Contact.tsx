@@ -18,10 +18,42 @@ export const Contact: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const mailtoLink = `mailto:info@desireddumpsters.com?subject=Service Inquiry&body=Name: ${formData.name}%0DPhone: ${formData.phone}%0DEmail: ${formData.email}%0DService: ${formData.service}%0D%0DMessage:%0D${formData.message}`;
-    window.location.href = mailtoLink;
+    setSubmitting(true);
+    setError('');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: '0f7f907a-6a99-4bb5-a565-f75a904e1122',
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          service: formData.service,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+        setFormData({ name: '', phone: '', email: '', service: 'dumpster-rental', message: '' });
+      } else {
+        setError('Something went wrong. Please try again or call us directly.');
+      }
+    } catch {
+      setError('Something went wrong. Please try again or call us directly.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -35,6 +67,16 @@ export const Contact: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <Card shadow="lg">
             <form onSubmit={handleSubmit} className="p-8 space-y-6">
+              {submitted && (
+                <div className="bg-green-50 border border-green-300 text-green-800 rounded-lg p-4 font-semibold text-center">
+                  Message sent! We'll be in touch soon.
+                </div>
+              )}
+              {error && (
+                <div className="bg-red-50 border border-red-300 text-red-700 rounded-lg p-4 text-center">
+                  {error}
+                </div>
+              )}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>
                 <input
@@ -101,8 +143,8 @@ export const Contact: React.FC = () => {
                 />
               </div>
 
-              <Button variant="primary" size="lg" className="w-full" type="submit">
-                Send Message
+              <Button variant="primary" size="lg" className="w-full" type="submit" disabled={submitting}>
+                {submitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </Card>
