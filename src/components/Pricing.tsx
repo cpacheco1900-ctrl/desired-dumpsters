@@ -112,10 +112,10 @@ export const Pricing: React.FC = () => {
             Custom pricing based on project scope. Call us for a free estimate.
           </p>
           <a
-            href="tel:+16163449894"
+            href="tel:+16163147778"
             className="inline-block text-orange-500 font-bold hover:text-orange-600 transition-colors"
           >
-            (616) 344-9894
+            (616) 314-7778
           </a>
         </div>
       </div>

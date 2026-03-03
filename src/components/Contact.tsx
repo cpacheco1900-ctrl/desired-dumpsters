@@ -116,8 +116,8 @@ export const Contact: React.FC = () => {
                   <Phone className="text-orange-500 flex-shrink-0 mt-1" size={24} />
                   <div>
                     <p className="font-semibold text-navy-900">Phone</p>
-                    <a href="tel:+16163449894" className="text-orange-500 hover:text-orange-600 font-bold text-lg">
-                      (616) 344-9894
+                    <a href="tel:+16163147778" className="text-orange-500 hover:text-orange-600 font-bold text-lg">
+                      (616) 314-7778
                     </a>
                   </div>
                 </div>

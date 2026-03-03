@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
                 Book Your Dumpster
               </Button>
               <Button variant="secondary" size="lg" className="border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-navy-500">
-                <a href="tel:+16163449894" className="block">Call Now</a>
+                <a href="tel:+16163147778" className="block">Call Now</a>
               </Button>
             </div>
 

@@ -56,11 +56,11 @@ export const Footer: React.FC = () => {
             <h4 className="font-bold text-lg mb-4 text-orange-400">Contact</h4>
             <div className="space-y-3">
               <a
-                href="tel:+16163449894"
+                href="tel:+16163147778"
                 className="flex items-center gap-2 text-navy-100 hover:text-orange-400 transition-colors"
               >
                 <Phone size={18} />
-                (616) 344-9894
+                (616) 314-7778
               </a>
               <p className="text-navy-100 text-sm">Mon-Sat, 7AM-7PM</p>
             </div>

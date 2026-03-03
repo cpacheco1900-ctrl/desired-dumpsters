@@ -22,11 +22,11 @@ export const Booking: React.FC = () => {
           <div className="bg-orange-50 border border-orange-200 rounded-lg p-8 w-full max-w-sm">
             <p className="text-gray-700 font-semibold mb-2">Call to Book Now</p>
             <a
-              href="tel:+16163449894"
+              href="tel:+16163147778"
               className="inline-flex items-center gap-2 text-2xl font-bold text-orange-500 hover:text-orange-600 transition-colors"
             >
               <Phone size={28} />
-              (616) 344-9894
+              (616) 314-7778
             </a>
             <p className="text-gray-600 text-sm mt-4">Mon-Sat, 7AM-7PM</p>
           </div>

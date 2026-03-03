@@ -38,11 +38,11 @@ export const ServiceAreas: React.FC = () => {
             <span className="font-semibold">Don't see your city listed?</span> That doesn't mean we can't help!
           </p>
           <a
-            href="tel:+16163449894"
+            href="tel:+16163147778"
             className="inline-flex items-center gap-2 text-orange-500 font-bold hover:text-orange-600 transition-colors"
           >
             <Phone size={20} />
-            Call us at (616) 344-9894 to check availability
+            Call us at (616) 314-7778 to check availability
           </a>
         </div>
       </div>

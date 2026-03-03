@@ -68,11 +68,11 @@ export const Header: React.FC = () => {
 
             <div className="flex items-center gap-4">
               <a
-                href="tel:+16163449894"
+                href="tel:+16163147778"
                 className="hidden md:flex items-center gap-2 text-orange-400 hover:text-orange-300 font-semibold transition-colors"
               >
                 <Phone size={20} />
-                (616) 344-9894
+                (616) 314-7778
               </a>
               <Button
                 variant="secondary"
@@ -117,11 +117,11 @@ export const Header: React.FC = () => {
               ))}
               <div className="border-t border-navy-400 pt-6 mt-2">
                 <a
-                  href="tel:+16163449894"
+                  href="tel:+16163147778"
                   className="flex items-center gap-2 text-orange-400 hover:text-orange-300 font-semibold text-lg mb-4"
                 >
                   <Phone size={20} />
-                  (616) 344-9894
+                  (616) 314-7778
                 </a>
                 <Button
                   variant="secondary"
