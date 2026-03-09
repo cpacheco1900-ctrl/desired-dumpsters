@@ -13,6 +13,18 @@ export const Booking: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    function handleMessage(e: MessageEvent) {
+      if (e.data.event && e.data.event === 'calendly.event_scheduled') {
+        window.location.href = '/thank-you';
+      }
+    }
+    window.addEventListener('message', handleMessage);
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, []);
+
   return (
     <Section id="booking" bgColor="light">
       <div className="space-y-8">
