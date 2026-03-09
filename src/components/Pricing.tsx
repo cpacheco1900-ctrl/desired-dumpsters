@@ -10,7 +10,7 @@ const pricingPlans = [
     name: '15 Yard Dumpster',
     price: 375,
     popular: false,
-    dimensions: '14ft long × 7.5ft wide × 4.5ft high',
+    dimensions: '12ft long × 8ft wide × 5ft high',
     description: 'Perfect for small home cleanouts, bathroom or kitchen remodels, and single-room renovations.',
     features: [
       'Flat-rate delivery included',
@@ -26,7 +26,7 @@ const pricingPlans = [
     name: '20 Yard Dumpster',
     price: 400,
     popular: false,
-    dimensions: '22ft long × 7.5ft wide × 4.5ft high',
+    dimensions: '14ft long × 8ft wide × 6ft high',
     description: 'Ideal for whole-home cleanouts, large construction projects, deck removals, and roofing jobs.',
     features: [
       'Flat-rate delivery included',
