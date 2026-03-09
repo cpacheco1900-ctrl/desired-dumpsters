@@ -10,8 +10,13 @@ import { Testimonials } from './components/Testimonials';
 import { Booking } from './components/Booking';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { ThankYou } from './components/ThankYou';
 
 function App() {
+  if (window.location.pathname === '/thank-you') {
+    return <ThankYou />;
+  }
+
   return (
     <div className="min-h-screen bg-white scroll-smooth">
       <Header />
