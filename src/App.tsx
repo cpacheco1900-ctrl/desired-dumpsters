@@ -15,29 +15,29 @@ import { Footer } from './components/Footer';
 import { ThankYou } from './components/ThankYou';
 
 function App() {
-    if (window.location.pathname === '/thank-you') {
-          return <ThankYou />;
-    }
+  if (window.location.pathname === '/thank-you') {
+    return <ThankYou />;
+  }
 
   return (
-        <div className="min-h-screen bg-white scroll-smooth">
-              <Header />
-              <main className="pt-16 md:pt-20">
-                      <SpringPromo />
-                      <Hero />
-                      <Services />
-                      <Pricing />
-                      <HowItWorks />
-                      <WhatWeAccept />
-                      <ServiceAreas />
-                      <Features />
-                      <Testimonials />
-                      <Booking />
-                      <Contact />
-              </main>
-              <Footer />
-        </div>
-      );
+    <div className="min-h-screen bg-white scroll-smooth">
+      <Header />
+      <main className="pt-16 md:pt-20">
+        <SpringPromo />
+        <Hero />
+        <Services />
+        <Pricing />
+        <HowItWorks />
+        <WhatWeAccept />
+        <ServiceAreas />
+        <Features />
+        <Testimonials />
+        <Booking />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
