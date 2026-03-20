@@ -7,10 +7,10 @@ export const SpringPromo: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-4 relative z-40">
+    <div className="relative z-50 bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <p className="text-center flex-1 font-semibold text-sm md:text-base">
-          Spring Cleanup Special! Get $20 off any 15 or 20 yard dumpster rental. Limited time offer, call to book.
+        <p className="flex-1 font-semibold text-sm md:text-base text-center">
+          🌱 Spring Cleanup Special! Get <strong>$20 off</strong> any 15 or 20 yard dumpster rental. Limited time offer, call to book.
         </p>
         <button
           onClick={() => setIsVisible(false)}
