@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white scroll-smooth">
       <Header />
-      <div className="pt-16 md:pt-20">
+      <div className="pt-24 md:pt-28">
         <SpringPromo />
         <main>
           <Hero />
