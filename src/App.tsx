@@ -22,19 +22,21 @@ function App() {
   return (
     <div className="min-h-screen bg-white scroll-smooth">
       <Header />
-      <main className="pt-16 md:pt-20">
+      <div className="pt-16 md:pt-20">
         <SpringPromo />
-        <Hero />
-        <Services />
-        <Pricing />
-        <HowItWorks />
-        <WhatWeAccept />
-        <ServiceAreas />
-        <Features />
-        <Testimonials />
-        <Booking />
-        <Contact />
-      </main>
+        <main>
+          <Hero />
+          <Services />
+          <Pricing />
+          <HowItWorks />
+          <WhatWeAccept />
+          <ServiceAreas />
+          <Features />
+          <Testimonials />
+          <Booking />
+          <Contact />
+        </main>
+      </div>
       <Footer />
     </div>
   );
