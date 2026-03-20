@@ -34,10 +34,10 @@ function App() {
                       <Testimonials />
                       <Booking />
                       <Contact />
-              </main>main>
+              </main>
               <Footer />
-        </div>div>
+        </div>
       );
 }
 
-export default App;</div>
+export default App;
