@@ -15,11 +15,8 @@ export const WhatWeAccept: React.FC = () => {
     'Leaves',
     'Brush',
     'Tree branches and limbs',
-  ];
-
-  const specialItems = [
-    { label: 'Mattresses & Box Springs', detail: 'Most places won\'t take them — we do! ($75 each)' },
-    { label: 'Couches & Large Upholstered Furniture', detail: 'No need to haul them yourself — we\'ve got it. ($75 each)' },
+    '🛏️ Mattresses & Box Springs — most places won\'t take them, we do!',
+    '🛋️ Couches & Large Upholstered Furniture — most places won\'t take them, we do!',
   ];
 
   const notAcceptedItems = [
@@ -80,22 +77,6 @@ export const WhatWeAccept: React.FC = () => {
               </ul>
             </div>
           </Card>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
-          {specialItems.map((item) => (
-            <Card key={item.label} shadow="lg" className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-300 hover:shadow-card-lg transition-shadow">
-              <div className="p-6 flex items-start gap-4">
-                <div className="bg-green-200 p-3 rounded-lg flex-shrink-0">
-                  <CheckCircle className="text-green-700" size={26} />
-                </div>
-                <div>
-                  <p className="text-lg font-bold text-navy-900">{item.label}</p>
-                  <p className="text-sm text-green-800 mt-1">{item.detail}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
         </div>
 
         <Card shadow="lg" className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 animate-fade-in" style={{ animationDelay: '300ms' }}>
