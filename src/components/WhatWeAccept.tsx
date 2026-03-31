@@ -5,6 +5,8 @@ import { Card } from './Card';
 
 export const WhatWeAccept: React.FC = () => {
   const acceptedItems = [
+    '🛏️ Mattresses & Box Springs — most places won\'t take them, we do!',
+    '🛋️ Couches & Large Upholstered Furniture — most places won\'t take them, we do!',
     'Household junk and clutter',
     'Furniture',
     'Construction debris',
@@ -15,8 +17,6 @@ export const WhatWeAccept: React.FC = () => {
     'Leaves',
     'Brush',
     'Tree branches and limbs',
-    '🛏️ Mattresses & Box Springs — most places won\'t take them, we do!',
-    '🛋️ Couches & Large Upholstered Furniture — most places won\'t take them, we do!',
   ];
 
   const notAcceptedItems = [
@@ -48,51 +48,17 @@ export const WhatWeAccept: React.FC = () => {
               </div>
 
               <ul className="space-y-3">
-                {acceptedItems.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
+                {acceptedItems.map((item, index) => (
+                  <li
+                    key={item}
+                    className={`flex items-start gap-3 ${index < 2 ? 'bg-green-50 border border-green-200 rounded-lg px-3 py-2' : ''}`}
+                  >
                     <span className="text-green-600 flex-shrink-0 mt-1">✓</span>
-                    <span className="text-gray-700">{item}</span>
+                    <span className={`${index < 2 ? 'text-green-800 font-semibold' : 'text-gray-700'}`}>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </Card>
 
-          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <div className="p-8 space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="bg-red-100 p-3 rounded-lg">
-                  <XCircle className="text-red-600" size={28} />
-                </div>
-                <h3 className="text-2xl font-bold text-navy-900">Not Accepted</h3>
-              </div>
-
-              <ul className="space-y-3">
-                {notAcceptedItems.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="text-red-600 flex-shrink-0 mt-1">✕</span>
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </Card>
-        </div>
-
-        <Card shadow="lg" className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 animate-fade-in" style={{ animationDelay: '300ms' }}>
-          <div className="p-8 flex items-start gap-6">
-            <div className="bg-green-200 p-4 rounded-lg flex-shrink-0">
-              <Leaf className="text-green-700" size={32} />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold text-navy-900 mb-2">Exterior Spring Cleanup Dumpster</h3>
-              <p className="text-gray-700 text-lg">
-                <span className="font-semibold text-green-700">10% off</span> when your load contains only leaves, brush and tree limbs. Ask us about this discount when booking.
-              </p>
-            </div>
-          </div>
-        </Card>
-      </div>
-    </Section>
-  );
-};
+          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in" style={{ animationDelay: '200m
