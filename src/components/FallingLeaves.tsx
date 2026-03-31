@@ -12,8 +12,8 @@ export const FallingLeaves: React.FC = () => {
     id: i,
     emoji: LEAF_EMOJIS[Math.floor(Math.random() * LEAF_EMOJIS.length)],
     left: `${randomBetween(0, 100)}vw`,
-    animationDuration: `${randomBetween(6, 14)}s`,
-    animationDelay: `${randomBetween(0, 10)}s`,
+    animationDuration: `${randomBetween(6, 10)}s`,
+    animationDelay: `${randomBetween(0, 5)}s`,
     fontSize: `${randomBetween(16, 30)}px`,
     swayAmount: `${randomBetween(30, 80)}px`,
   }));
@@ -30,7 +30,7 @@ export const FallingLeaves: React.FC = () => {
           top: -60px;
           pointer-events: none;
           z-index: 9999;
-          animation: fall linear infinite;
+          animation: fall linear;
         }
       `}</style>
       {leaves.map(leaf => (
