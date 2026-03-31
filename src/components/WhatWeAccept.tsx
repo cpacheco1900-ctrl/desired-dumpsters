@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, DollarSign, XCircle, Leaf } from 'lucide-react';
+import { CheckCircle, XCircle, Leaf } from 'lucide-react';
 import { Section } from './Section';
 import { Card } from './Card';
 
@@ -17,12 +17,13 @@ export const WhatWeAccept: React.FC = () => {
     'Tree branches and limbs',
   ];
 
-  const additionalFeeItems = [
-    'Mattresses and box springs ($75 each)',
-    'Couches and large upholstered furniture ($75 each)',
+  const specialItems = [
+    { label: 'Mattresses & Box Springs', detail: 'Most places won\'t take them — we do! ($75 each)' },
+    { label: 'Couches & Large Upholstered Furniture', detail: 'No need to haul them yourself — we\'ve got it. ($75 each)' },
   ];
 
   const notAcceptedItems = [
+    'Tires',
     'Refrigerants and appliances containing Freon (refrigerators, freezers, AC units)',
     'Hazardous materials and chemicals',
     'Paint (latex or oil based)',
@@ -39,7 +40,7 @@ export const WhatWeAccept: React.FC = () => {
           <p className="text-lg text-gray-600">Know exactly what can go in your dumpster</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in">
             <div className="p-8 space-y-6">
               <div className="flex items-center gap-3">
@@ -57,30 +58,6 @@ export const WhatWeAccept: React.FC = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-          </Card>
-
-          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in" style={{ animationDelay: '100ms' }}>
-            <div className="p-8 space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="bg-orange-100 p-3 rounded-lg">
-                  <DollarSign className="text-orange-600" size={28} />
-                </div>
-                <h3 className="text-2xl font-bold text-navy-900">Additional Fee</h3>
-              </div>
-
-              <ul className="space-y-3">
-                {additionalFeeItems.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="text-orange-600 flex-shrink-0 mt-1">!</span>
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mt-6">
-                <p className="text-sm text-orange-900 font-semibold">Call for pricing on special items</p>
-              </div>
             </div>
           </Card>
 
@@ -103,6 +80,22 @@ export const WhatWeAccept: React.FC = () => {
               </ul>
             </div>
           </Card>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
+          {specialItems.map((item) => (
+            <Card key={item.label} shadow="lg" className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-300 hover:shadow-card-lg transition-shadow">
+              <div className="p-6 flex items-start gap-4">
+                <div className="bg-green-200 p-3 rounded-lg flex-shrink-0">
+                  <CheckCircle className="text-green-700" size={26} />
+                </div>
+                <div>
+                  <p className="text-lg font-bold text-navy-900">{item.label}</p>
+                  <p className="text-sm text-green-800 mt-1">{item.detail}</p>
+                </div>
+              </div>
+            </Card>
+          ))}
         </div>
 
         <Card shadow="lg" className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 animate-fade-in" style={{ animationDelay: '300ms' }}>
