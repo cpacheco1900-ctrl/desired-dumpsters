@@ -14,10 +14,22 @@ import { Booking } from './components/Booking';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ThankYou } from './components/ThankYou';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { TermsAndConditions } from './components/TermsAndConditions';
 
 function App() {
-  if (window.location.pathname === '/thank-you') {
+  const pathname = window.location.pathname;
+
+  if (pathname === '/thank-you') {
     return <ThankYou />;
+  }
+
+  if (pathname === '/privacy-policy') {
+    return <PrivacyPolicy />;
+  }
+
+  if (pathname === '/terms-and-conditions') {
+    return <TermsAndConditions />;
   }
 
   return (

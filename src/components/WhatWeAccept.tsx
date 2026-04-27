@@ -1,12 +1,10 @@
 import React from 'react';
-import { CheckCircle, XCircle, Leaf } from 'lucide-react';
+import { CheckCircle, DollarSign, XCircle, Leaf } from 'lucide-react';
 import { Section } from './Section';
 import { Card } from './Card';
 
 export const WhatWeAccept: React.FC = () => {
   const acceptedItems = [
-    "🛏️ Mattresses & Box Springs — most places won't take them, we do!",
-    "🛋️ Couches & Large Upholstered Furniture — most places won't take them, we do!",
     'Household junk and clutter',
     'Furniture',
     'Construction debris',
@@ -19,8 +17,12 @@ export const WhatWeAccept: React.FC = () => {
     'Tree branches and limbs',
   ];
 
+  const additionalFeeItems = [
+    'Mattresses and box springs ($75 each)',
+    'Couches and large upholstered furniture ($75 each)',
+  ];
+
   const notAcceptedItems = [
-    'Tires',
     'Refrigerants and appliances containing Freon (refrigerators, freezers, AC units)',
     'Hazardous materials and chemicals',
     'Paint (latex or oil based)',
@@ -37,7 +39,7 @@ export const WhatWeAccept: React.FC = () => {
           <p className="text-lg text-gray-600">Know exactly what can go in your dumpster</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in">
             <div className="p-8 space-y-6">
               <div className="flex items-center gap-3">
@@ -48,16 +50,37 @@ export const WhatWeAccept: React.FC = () => {
               </div>
 
               <ul className="space-y-3">
-                {acceptedItems.map((item, index) => (
-                  <li
-                    key={item}
-                    className={`flex items-start gap-3 ${index < 2 ? 'bg-green-50 border border-green-200 rounded-lg px-3 py-2' : ''}`}
-                  >
+                {acceptedItems.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
                     <span className="text-green-600 flex-shrink-0 mt-1">✓</span>
-                    <span className={index < 2 ? 'text-green-800 font-semibold' : 'text-gray-700'}>{item}</span>
+                    <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
               </ul>
+            </div>
+          </Card>
+
+          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in" style={{ animationDelay: '100ms' }}>
+            <div className="p-8 space-y-6">
+              <div className="flex items-center gap-3">
+                <div className="bg-orange-100 p-3 rounded-lg">
+                  <DollarSign className="text-orange-600" size={28} />
+                </div>
+                <h3 className="text-2xl font-bold text-navy-900">Additional Fee</h3>
+              </div>
+
+              <ul className="space-y-3">
+                {additionalFeeItems.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="text-orange-600 flex-shrink-0 mt-1">!</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mt-6">
+                <p className="text-sm text-orange-900 font-semibold">Call for pricing on special items</p>
+              </div>
             </div>
           </Card>
 

@@ -77,13 +77,21 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-navy-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
             <p className="text-navy-200 text-sm">
               &copy; 2026 Desired Dumpsters. All rights reserved.
             </p>
             <div className="text-navy-200 text-sm">
               No Hidden Fees | Transparent Pricing | Locally Owned
             </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6 text-navy-200 text-sm border-t border-navy-700 pt-6">
+            <a href="/privacy-policy" className="hover:text-orange-400 transition-colors">
+              Privacy Policy
+            </a>
+            <a href="/terms-and-conditions" className="hover:text-orange-400 transition-colors">
+              Terms and Conditions
+            </a>
           </div>
         </div>
       </div>
