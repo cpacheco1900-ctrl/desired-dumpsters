@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const LEAF_COUNT = 18;
 const LEAF_EMOJIS = ['🍂', '🍁', '🌿', '🍃'];
@@ -8,6 +8,15 @@ function randomBetween(a: number, b: number) {
 }
 
 export const FallingLeaves: React.FC = () => {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!visible) return null;
+
   const leaves = Array.from({ length: LEAF_COUNT }, (_, i) => ({
     id: i,
     emoji: LEAF_EMOJIS[Math.floor(Math.random() * LEAF_EMOJIS.length)],
