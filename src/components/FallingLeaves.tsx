@@ -11,7 +11,7 @@ export const FallingLeaves: React.FC = () => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(false), 5000);
+    const timer = setTimeout(() => setVisible(false), 15000);
     return () => clearTimeout(timer);
   }, []);
 
