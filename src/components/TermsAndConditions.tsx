@@ -25,20 +25,26 @@ export const TermsAndConditions: React.FC = () => {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8">
           <div>
-            <p className="text-sm text-gray-500 font-semibold mb-4">Last updated: April 27, 2026</p>
+            <p className="text-sm text-gray-500 font-semibold mb-4">Last updated: May 7, 2026</p>
           </div>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-bold text-navy-900 mb-4">SMS Program</h2>
             <p className="leading-relaxed">
-              Desired Dumpsters operates an SMS messaging program for booking confirmations, scheduling, and support. Message frequency varies. Message and data rates may apply.
+              Desired Dumpsters operates the &quot;Desired Dumpsters SMS Alerts&quot; program to send booking confirmations,
+              delivery scheduling updates, and general customer support messages. You can opt in by submitting the
+              contact or booking form at desireddumpsters.com (by checking the SMS consent checkbox, which is unchecked
+              by default and requires active selection) or by texting (616) 314-7778 directly. Message frequency varies.
+              Message and data rates may apply. No mobile information will be shared with third parties or affiliates
+              for marketing purposes.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-bold text-navy-900 mb-4">Opt-Out</h2>
             <p className="leading-relaxed">
-              Reply STOP to unsubscribe. Reply HELP for assistance or call 616-314-7778.
+              Reply <strong>STOP</strong> to unsubscribe at any time. Reply <strong>HELP</strong> for assistance or
+              call (616) 314-7778. All opt-out requests are honored immediately.
             </p>
           </section>
 
@@ -66,7 +72,7 @@ export const TermsAndConditions: React.FC = () => {
                 15005 Van Buren, West Olive, MI 49460
               </p>
               <p className="leading-relaxed">
-                <span className="font-semibold">Phone:</span> 616-314-7778
+                <span className="font-semibold">Phone:</span> (616) 314-7778
               </p>
             </div>
           </section>
