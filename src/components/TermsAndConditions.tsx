@@ -25,7 +25,7 @@ export const TermsAndConditions: React.FC = () => {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8">
           <div>
-            <p className="text-sm text-gray-500 font-semibold mb-4">Last updated: May 7, 2026</p>
+            <p className="text-sm text-gray-500 font-semibold mb-4">Last updated: May 13, 2026</p>
           </div>
 
           <section>
