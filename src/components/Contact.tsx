@@ -85,7 +85,7 @@ export const Contact: React.FC = () => {
                           </div>
                                               )}
                                               <div>
-                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>label>
+                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>
                                                             <input
                                                                               type="text"
                                                                               name="name"
@@ -98,7 +98,7 @@ export const Contact: React.FC = () => {
                                               </div>
                                   
                                               <div>
-                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>label>
+                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
                                                             <input
                                                                               type="tel"
                                                                               name="phone"
@@ -111,7 +111,7 @@ export const Contact: React.FC = () => {
                                               </div>
                                   
                                               <div>
-                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>label>
+                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
                                                             <input
                                                                               type="email"
                                                                               name="email"
@@ -124,22 +124,22 @@ export const Contact: React.FC = () => {
                                               </div>
                                   
                                               <div>
-                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Service Type</label>label>
+                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Service Type</label>
                                                             <select
                                                                               name="service"
                                                                               value={formData.service}
                                                                               onChange={handleChange}
                                                                               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
                                                                             >
-                                                                            <option value="dumpster-rental">Dumpster Rental</option>option>
-                                                                            <option value="junk-removal">Junk Removal &amp; Cleanout</option>option>
-                                                                            <option value="both">Both Services</option>option>
-                                                                            <option value="other">Other</option>option>
-                                                            </select>select>
+                                                                            <option value="dumpster-rental">Dumpster Rental</option>
+                                                                            <option value="junk-removal">Junk Removal &amp; Cleanout</option>
+                                                                            <option value="both">Both Services</option>
+                                                                            <option value="other">Other</option>
+                                                            </select>
                                               </div>
                                   
                                               <div>
-                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>label>
+                                                            <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
                                                             <textarea
                                                                               name="message"
                                                                               value={formData.message}
@@ -161,21 +161,21 @@ export const Contact: React.FC = () => {
                                                                             regarding my inquiry, booking confirmation, and scheduling. This is optional
                                                                             and not required to submit this form. Message frequency varies.
                                                                             Message and data rates may apply. Reply STOP to opt out or HELP for help. View our{' '}
-                                                                            <a href="/privacy-policy" className="underline text-orange-500">Privacy Policy</a>a>{' '}
+                                                                            <a href="/privacy-policy" className="underline text-orange-500">Privacy Policy</a>{' '}
                                                                             and{' '}
-                                                                            <a href="/terms-and-conditions" className="underline text-orange-500">Terms &amp; Conditions</a>a>.
-                                                            </label>label>
+                                                                            <a href="/terms-and-conditions" className="underline text-orange-500">Terms &amp; Conditions</a>.
+                                                            </label>
                                               </div>
                                   
                                               <Button variant="primary" size="lg" className="w-full" type="submit" disabled={submitting}>
                                                 {submitting ? 'Sending...' : 'Send Message'}
-                                              </Button>Button>
-                                  </form>form>
-                        </Card>Card>
+                                              </Button>
+                                  </form>
+                        </Card>
                 
                         <div className="space-y-6">
                                   <Card shadow="lg" className="p-8">
-                                              <h3 className="text-2xl font-bold text-navy-900 mb-6">Get In Touch</h3>h3>
+                                              <h3 className="text-2xl font-bold text-navy-900 mb-6">Get In Touch</h3>
                                   
                                               <div className="space-y-6">
                                                             <div className="flex gap-4">
@@ -184,7 +184,7 @@ export const Contact: React.FC = () => {
                                                                                               <p className="font-semibold text-navy-900">Phone</p>
                                                                                               <a href="tel:+16163147778" className="text-orange-500 hover:text-orange-600 font-bold text-lg">
                                                                                                                   (616) 314-7778
-                                                                                                </a>a>
+                                                                                                </a>
                                                                             </div>
                                                             </div>
                                               
@@ -211,13 +211,13 @@ export const Contact: React.FC = () => {
                                                                                               <p className="font-semibold text-navy-900">Email</p>
                                                                                               <a href="mailto:info@desireddumpsters.com" className="text-orange-500 hover:text-orange-600">
                                                                                                                   info@desireddumpsters.com
-                                                                                                </a>a>
+                                                                                                </a>
                                                                             </div>
                                                             </div>
                                               </div>
-                                  </Card>Card>
+                                  </Card>
                         </div>
                 </div>
-          </Section>Section>
+          </Section>
         );
 };</Section>
