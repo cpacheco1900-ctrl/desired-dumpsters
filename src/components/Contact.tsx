@@ -65,11 +65,11 @@ export const Contact: React.FC = () => {
     return (
           <Section id="contact" className="bg-gray-50">
                 <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Get a Free Quote</h2>h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Get a Free Quote</h2>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                                   Ready to get started? Contact us today for a free quote on dumpster rental services.
-                        </p>p>
-                </div>div>
+                        </p>
+                </div>
           
                 <div className="grid md:grid-cols-2 gap-8">
                         <Card shadow="lg">
@@ -77,12 +77,12 @@ export const Contact: React.FC = () => {
                                     {submitted && (
                           <div className="bg-green-50 border border-green-300 text-green-800 rounded-lg p-4 font-semibold text-center">
                                           Message sent! We'll be in touch soon.
-                          </div>div>
+                          </div>
                                               )}
                                     {error && (
                           <div className="bg-red-50 border border-red-300 text-red-700 rounded-lg p-4 text-center">
                             {error}
-                          </div>div>
+                          </div>
                                               )}
                                               <div>
                                                             <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>label>
@@ -95,7 +95,7 @@ export const Contact: React.FC = () => {
                                                                               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
                                                                               placeholder="Your name"
                                                                             />
-                                              </div>div>
+                                              </div>
                                   
                                               <div>
                                                             <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>label>
@@ -108,7 +108,7 @@ export const Contact: React.FC = () => {
                                                                               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
                                                                               placeholder="(616) 123-4567"
                                                                             />
-                                              </div>div>
+                                              </div>
                                   
                                               <div>
                                                             <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>label>
@@ -121,7 +121,7 @@ export const Contact: React.FC = () => {
                                                                               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
                                                                               placeholder="your@email.com"
                                                                             />
-                                              </div>div>
+                                              </div>
                                   
                                               <div>
                                                             <label className="block text-sm font-semibold text-gray-700 mb-2">Service Type</label>label>
@@ -136,7 +136,7 @@ export const Contact: React.FC = () => {
                                                                             <option value="both">Both Services</option>option>
                                                                             <option value="other">Other</option>option>
                                                             </select>select>
-                                              </div>div>
+                                              </div>
                                   
                                               <div>
                                                             <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>label>
@@ -148,7 +148,7 @@ export const Contact: React.FC = () => {
                                                                               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all resize-none"
                                                                               placeholder="Tell us about your project..."
                                                                             />
-                                              </div>div>
+                                              </div>
                                   
                                               <div className="flex items-start gap-2">
                                                             <input
@@ -165,7 +165,7 @@ export const Contact: React.FC = () => {
                                                                             and{' '}
                                                                             <a href="/terms-and-conditions" className="underline text-orange-500">Terms &amp; Conditions</a>a>.
                                                             </label>label>
-                                              </div>div>
+                                              </div>
                                   
                                               <Button variant="primary" size="lg" className="w-full" type="submit" disabled={submitting}>
                                                 {submitting ? 'Sending...' : 'Send Message'}
@@ -181,43 +181,43 @@ export const Contact: React.FC = () => {
                                                             <div className="flex gap-4">
                                                                             <Phone className="text-orange-500 flex-shrink-0 mt-1" size={24} />
                                                                             <div>
-                                                                                              <p className="font-semibold text-navy-900">Phone</p>p>
+                                                                                              <p className="font-semibold text-navy-900">Phone</p>
                                                                                               <a href="tel:+16163147778" className="text-orange-500 hover:text-orange-600 font-bold text-lg">
                                                                                                                   (616) 314-7778
                                                                                                 </a>a>
-                                                                            </div>div>
-                                                            </div>div>
+                                                                            </div>
+                                                            </div>
                                               
                                                             <div className="flex gap-4">
                                                                             <Clock className="text-orange-500 flex-shrink-0 mt-1" size={24} />
                                                                             <div>
-                                                                                              <p className="font-semibold text-navy-900">Service Hours</p>p>
-                                                                                              <p className="text-gray-600">Monday - Saturday</p>p>
-                                                                                              <p className="text-gray-600">7:00 AM - 7:00 PM</p>p>
-                                                                            </div>div>
-                                                            </div>div>
+                                                                                              <p className="font-semibold text-navy-900">Service Hours</p>
+                                                                                              <p className="text-gray-600">Monday - Saturday</p>
+                                                                                              <p className="text-gray-600">7:00 AM - 7:00 PM</p>
+                                                                            </div>
+                                                            </div>
                                               
                                                             <div className="flex gap-4">
                                                                             <MapPin className="text-orange-500 flex-shrink-0 mt-1" size={24} />
                                                                             <div>
-                                                                                              <p className="font-semibold text-navy-900">Service Area</p>p>
-                                                                                              <p className="text-gray-600">Greater Grand Rapids &amp; West Michigan</p>p>
-                                                                            </div>div>
-                                                            </div>div>
+                                                                                              <p className="font-semibold text-navy-900">Service Area</p>
+                                                                                              <p className="text-gray-600">Greater Grand Rapids &amp; West Michigan</p>
+                                                                            </div>
+                                                            </div>
                                               
                                                             <div className="flex gap-4">
                                                                             <Mail className="text-orange-500 flex-shrink-0 mt-1" size={24} />
                                                                             <div>
-                                                                                              <p className="font-semibold text-navy-900">Email</p>p>
+                                                                                              <p className="font-semibold text-navy-900">Email</p>
                                                                                               <a href="mailto:info@desireddumpsters.com" className="text-orange-500 hover:text-orange-600">
                                                                                                                   info@desireddumpsters.com
                                                                                                 </a>a>
-                                                                            </div>div>
-                                                            </div>div>
-                                              </div>div>
+                                                                            </div>
+                                                            </div>
+                                              </div>
                                   </Card>Card>
-                        </div>div>
-                </div>div>
+                        </div>
+                </div>
           </Section>Section>
         );
 };</Section>
