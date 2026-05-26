@@ -145,64 +145,11 @@ export const Contact: React.FC = () => {
                   id="smsConsent"
                   checked={smsConsent}
                   onChange={handleSmsConsent}
+                  required
                   className="mt-1 h-4 w-4 accent-orange-500 cursor-pointer"
                 />
                 <label htmlFor="smsConsent" className="text-xs text-gray-400 cursor-pointer">
-                  (Optional) I would like to receive SMS messages from Desired Dumpsters regarding my inquiry, booking confirmation, and scheduling. Message frequency varies up to 5 messages per month. Message and data rates may apply. Reply STOP to opt out or HELP for help. View our{' '}
+                  I agree to receive SMS messages from Desired Dumpsters regarding my inquiry, booking confirmation, and scheduling. Message frequency varies up to 5 messages per month. Message and data rates may apply. Reply STOP to opt out or HELP for help. View our{' '}
                   <a href="/privacy-policy" className="text-orange-400 underline">Privacy Policy</a>{' '}
                   and{' '}
                   <a href="/terms-and-conditions" className="text-orange-400 underline">Terms &amp; Conditions</a>.
-                </label>
-              </div>
-              {smsConfirmed && (
-                <p className="text-green-400 text-xs font-medium">
-                  ✓ You have opted in to receive SMS messages from Desired Dumpsters. Reply STOP at any time to unsubscribe.
-                </p>
-              )}
-              {error && <p className="text-red-400 text-sm">{error}</p>}
-              <Button type="submit" disabled={submitting} className="w-full">
-                {submitting ? 'Sending...' : 'Send Message'}
-              </Button>
-            </form>
-          )}
-        </Card>
-        <div className="space-y-6">
-          <Card className="p-6">
-            <h3 className="text-lg font-bold text-white mb-4">Get In Touch</h3>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Phone className="text-orange-500 w-5 h-5" />
-                <div>
-                  <p className="text-sm text-gray-400">Phone</p>
-                  <a href="tel:6163147778" className="text-orange-400 font-semibold">(616) 314-7778</a>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Clock className="text-orange-500 w-5 h-5" />
-                <div>
-                  <p className="text-sm text-gray-400">Service Hours</p>
-                  <p className="text-white">Monday - Saturday</p>
-                  <p className="text-white">7:00 AM - 7:00 PM</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="text-orange-500 w-5 h-5" />
-                <div>
-                  <p className="text-sm text-gray-400">Service Area</p>
-                  <p className="text-white">Greater Grand Rapids &amp; West Michigan</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="text-orange-500 w-5 h-5" />
-                <div>
-                  <p className="text-sm text-gray-400">Email</p>
-                  <a href="mailto:info@desireddumpsters.com" className="text-orange-400">info@desireddumpsters.com</a>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-      </div>
-    </Section>
-  );
-};
