@@ -145,11 +145,10 @@ export const Contact: React.FC = () => {
                   id="smsConsent"
                   checked={smsConsent}
                   onChange={handleSmsConsent}
-                  required
                   className="mt-1 h-4 w-4 accent-orange-500 cursor-pointer"
                 />
                 <label htmlFor="smsConsent" className="text-xs text-gray-400 cursor-pointer">
-                  I agree to receive SMS messages from Desired Dumpsters regarding my inquiry, booking confirmation, and scheduling. Message frequency varies up to 5 messages per month. Message and data rates may apply. Reply STOP to opt out or HELP for help. View our{' '}
+                  <span className="text-gray-500 italic">(Optional)</span> I agree to receive SMS messages from Desired Dumpsters regarding my inquiry, booking confirmation, and scheduling. Message frequency varies up to 5 messages per month. Message and data rates may apply. Reply STOP to opt out or HELP for help. View our{' '}
                   <a href="/privacy-policy" className="text-orange-400 underline">Privacy Policy</a>{' '}
                   and{' '}
                   <a href="/terms-and-conditions" className="text-orange-400 underline">Terms &amp; Conditions</a>.
