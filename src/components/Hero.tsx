@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 West Michigan's Most Trusted Dumpster Rental & Cleanout Service
               </h1>
-              <p className="text-xl text-navy-100 mt-4 leading-relaxed">
+              <p className="text-xl text-white mt-4 leading-relaxed">
                 Fast, reliable dumpster rentals and junk removal with transparent, flat-rate pricing.
               </p>
             </div>
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
                 <div key={stat.label} className="flex flex-col items-center md:items-start">
                   <stat.icon className="text-orange-400 mb-2" size={24} />
                   <p className="text-sm font-semibold text-orange-400 whitespace-nowrap">{stat.label}</p>
-                  <p className="text-xs text-navy-100">{stat.value}</p>
+                  <p className="text-xs text-white">{stat.value}</p>
                 </div>
               ))}
             </div>

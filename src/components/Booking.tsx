@@ -37,7 +37,11 @@ export const Booking: React.FC = () => {
           className="calendly-inline-widget"
           data-url="https://calendly.com/cpacheco1900/dumpster-delivery?background_color=0f172a&text_color=ffffff&primary_color=ea580c"
           style={{ minWidth: '320px', height: '700px' }}
-        />
+        >
+          <p className="text-center text-gray-500 py-12">
+            Loading booking calendar&hellip; if it doesn&rsquo;t appear, call us at (616) 314-7778.
+          </p>
+        </div>
       </div>
     </Section>
   );

@@ -1,8 +1,5 @@
-import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { SpringPromo } from './components/SpringPromo';
-import { FallingLeaves } from './components/FallingLeaves';
 import { Services } from './components/Services';
 import { Pricing } from './components/Pricing';
 import { HowItWorks } from './components/HowItWorks';
@@ -34,10 +31,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white scroll-smooth">
-      <FallingLeaves />
       <Header />
       <div className="pt-24 md:pt-28">
-        <SpringPromo />
         <main>
           <Hero />
           <Services />

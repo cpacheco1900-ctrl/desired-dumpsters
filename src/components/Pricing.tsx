@@ -9,6 +9,7 @@ const pricingPlans = [
   {
     name: '15 Yard Dumpster',
     price: 375,
+    image: '/dumpster.jpg',
     popular: false,
     dimensions: '12ft long × 8ft wide × 5ft high',
     description: 'Perfect for small home cleanouts, bathroom or kitchen remodels, and single-room renovations.',
@@ -25,6 +26,7 @@ const pricingPlans = [
   {
     name: '20 Yard Dumpster',
     price: 400,
+    image: '/Final_PnG_Red_Dumpster_transparent.png',
     popular: false,
     dimensions: '14ft long × 8ft wide × 6ft high',
     description: 'Ideal for whole-home cleanouts, large construction projects, deck removals, and roofing jobs.',
@@ -57,14 +59,13 @@ export const Pricing: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {pricingPlans.map((plan, index) => (
+          {pricingPlans.map((plan) => (
             <Card
               key={plan.name}
               shadow={plan.popular ? 'lg' : 'sm'}
-              className={`relative overflow-hidden transition-all hover:shadow-card-lg animate-fade-in ${
+              className={`relative overflow-hidden transition-all hover:shadow-card-lg ${
                 plan.popular ? 'md:ring-2 md:ring-orange-500 md:scale-105' : ''
               }`}
-              style={{ animationDelay: `${index * 100}ms` }}
             >
               {plan.popular && (
                 <div className="absolute top-0 left-0 right-0 bg-orange-500 text-white text-center py-2 font-bold text-sm">
@@ -86,7 +87,7 @@ export const Pricing: React.FC = () => {
 
                 <div className="rounded-lg overflow-hidden h-48 bg-gray-100">
                   <img
-                    src="/dumpster.jpg"
+                    src={plan.image}
                     alt={plan.name}
                     className="w-full h-full object-cover"
                   />

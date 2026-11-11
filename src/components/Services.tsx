@@ -40,8 +40,8 @@ export const Services: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <Card key={service.title} shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+          {services.map((service) => (
+            <Card key={service.title} shadow="lg" className="hover:shadow-card-lg transition-shadow">
               <div className="p-8 space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-orange-100 p-3 rounded-lg flex-shrink-0">

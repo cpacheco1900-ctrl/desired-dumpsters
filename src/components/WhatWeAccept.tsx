@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, DollarSign, XCircle, Leaf } from 'lucide-react';
+import { CheckCircle, DollarSign, XCircle } from 'lucide-react';
 import { Section } from './Section';
 import { Card } from './Card';
 
@@ -40,7 +40,7 @@ export const WhatWeAccept: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in">
+          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow">
             <div className="p-8 space-y-6">
               <div className="flex items-center gap-3">
                 <div className="bg-green-100 p-3 rounded-lg">
@@ -60,7 +60,7 @@ export const WhatWeAccept: React.FC = () => {
             </div>
           </Card>
 
-          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in" style={{ animationDelay: '100ms' }}>
+          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow">
             <div className="p-8 space-y-6">
               <div className="flex items-center gap-3">
                 <div className="bg-orange-100 p-3 rounded-lg">
@@ -84,7 +84,7 @@ export const WhatWeAccept: React.FC = () => {
             </div>
           </Card>
 
-          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow animate-fade-in" style={{ animationDelay: '200ms' }}>
+          <Card shadow="lg" className="hover:shadow-card-lg transition-shadow">
             <div className="p-8 space-y-6">
               <div className="flex items-center gap-3">
                 <div className="bg-red-100 p-3 rounded-lg">
@@ -105,19 +105,6 @@ export const WhatWeAccept: React.FC = () => {
           </Card>
         </div>
 
-        <Card shadow="lg" className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 animate-fade-in" style={{ animationDelay: '300ms' }}>
-          <div className="p-8 flex items-start gap-6">
-            <div className="bg-green-200 p-4 rounded-lg flex-shrink-0">
-              <Leaf className="text-green-700" size={32} />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold text-navy-900 mb-2">Exterior Spring Cleanup Dumpster</h3>
-              <p className="text-gray-700 text-lg">
-                <span className="font-semibold text-green-700">10% off</span> when your load contains only leaves, brush and tree limbs. Ask us about this discount when booking.
-              </p>
-            </div>
-          </div>
-        </Card>
       </div>
     </Section>
   );

@@ -6,7 +6,7 @@ const cities = [
   'Allendale', 'Byron Center', 'Comstock Park',
   'Coopersville', 'Fruitport', 'Georgetown',
   'Grand Haven', 'Grand Rapids', 'Grandville', 'Holland', 'Hudsonville',
-  'Jenison', 'Kent', 'Kentwood', 'Marne', 'Muskegon',
+  'Jenison', 'Kentwood', 'Marne', 'Muskegon',
   'Norton Shores', 'Nunica', 'Walker', 'Wyoming', 'Zeeland',
   'Saugatuck', 'Fennville', 'Allegan'
 ];
@@ -24,7 +24,6 @@ const cityCoords = [
   { name: 'Holland', lat: 42.7875, lng: -86.1089 },
   { name: 'Hudsonville', lat: 42.8728, lng: -85.8636 },
   { name: 'Jenison', lat: 42.9081, lng: -85.8269 },
-  { name: 'Kent', lat: 43.0000, lng: -85.5500 },
   { name: 'Kentwood', lat: 42.8695, lng: -85.6447 },
   { name: 'Marne', lat: 43.0281, lng: -85.9047 },
   { name: 'Muskegon', lat: 43.2342, lng: -86.2484 },
@@ -111,11 +110,10 @@ export const ServiceAreas: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {cities.map((city, index) => (
+          {cities.map((city) => (
             <div
               key={city}
-              className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-orange-50 transition-colors animate-fade-in"
-              style={{ animationDelay: `${(index % 10) * 30}ms` }}
+              className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-orange-50 transition-colors"
             >
               <span className="text-orange-500 flex-shrink-0 text-lg">📍</span>
               <span className="text-gray-700 font-medium">{city}</span>
@@ -129,7 +127,7 @@ export const ServiceAreas: React.FC = () => {
 
         <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-8 text-center">
           <p className="text-gray-700 mb-4">
-            <span className="font-semibold">Don't see your city listed?</span> That doesn't mean we can't help!
+            <span className="font-semibold">Don't see your city listed?</span>{' '}That doesn't mean we can't help!
           </p>
           <a
             href="tel:+16163147778"

@@ -74,14 +74,14 @@ export const Contact: React.FC = () => {
         <Card className="p-8">
           {submitted ? (
             <div className="text-center py-8">
-              <div className="text-green-400 text-5xl mb-4">✓</div>
-              <h3 className="text-xl font-bold text-white mb-2">Message Sent!</h3>
-              <p className="text-gray-400">We'll be in touch shortly to confirm your details.</p>
+              <div className="text-green-600 text-5xl mb-4">✓</div>
+              <h3 className="text-xl font-bold text-navy-900 mb-2">Message Sent!</h3>
+              <p className="text-gray-600">We'll be in touch shortly to confirm your details.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -93,7 +93,7 @@ export const Contact: React.FC = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-1">Phone</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
                 <input
                   type="tel"
                   name="phone"
@@ -104,7 +104,7 @@ export const Contact: React.FC = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -115,7 +115,7 @@ export const Contact: React.FC = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-1">Service Type</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Service Type</label>
                 <select
                   name="service"
                   value={formData.service}
@@ -129,7 +129,7 @@ export const Contact: React.FC = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -147,7 +147,7 @@ export const Contact: React.FC = () => {
                   onChange={handleSmsConsent}
                   className="mt-1 h-4 w-4 accent-orange-500 cursor-pointer"
                 />
-                <label htmlFor="smsConsent" className="text-xs text-gray-400 cursor-pointer">
+                <label htmlFor="smsConsent" className="text-xs text-gray-600 cursor-pointer">
                   <span className="text-gray-500 italic">(Optional)</span> I agree to receive SMS messages from Desired Dumpsters regarding my inquiry, booking confirmation, and scheduling. Message frequency varies up to 5 messages per month. Message and data rates may apply. Reply STOP to opt out or HELP for help. View our{' '}
                   <a href="/privacy-policy" className="text-orange-400 underline">Privacy Policy</a>{' '}
                   and{' '}
@@ -155,11 +155,11 @@ export const Contact: React.FC = () => {
                 </label>
               </div>
               {smsConfirmed && (
-                <p className="text-green-400 text-xs font-medium">
+                <p className="text-green-600 text-xs font-medium">
                   ✓ You have opted in to receive SMS messages from Desired Dumpsters. Reply STOP at any time to unsubscribe.
                 </p>
               )}
-              {error && <p className="text-red-400 text-sm">{error}</p>}
+              {error && <p className="text-red-600 text-sm">{error}</p>}
               <Button type="submit" disabled={submitting} className="w-full">
                 {submitting ? 'Sending...' : 'Send Message'}
               </Button>
@@ -168,34 +168,34 @@ export const Contact: React.FC = () => {
         </Card>
         <div className="space-y-6">
           <Card className="p-6">
-            <h3 className="text-lg font-bold text-white mb-4">Get In Touch</h3>
+            <h3 className="text-lg font-bold text-navy-900 mb-4">Get In Touch</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Phone className="text-orange-500 w-5 h-5" />
                 <div>
-                  <p className="text-sm text-gray-400">Phone</p>
+                  <p className="text-sm text-gray-500">Phone</p>
                   <a href="tel:6163147778" className="text-orange-400 font-semibold">(616) 314-7778</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="text-orange-500 w-5 h-5" />
                 <div>
-                  <p className="text-sm text-gray-400">Service Hours</p>
-                  <p className="text-white">Monday - Saturday</p>
-                  <p className="text-white">7:00 AM - 7:00 PM</p>
+                  <p className="text-sm text-gray-500">Service Hours</p>
+                  <p className="text-gray-900">Monday - Saturday</p>
+                  <p className="text-gray-900">7:00 AM - 7:00 PM</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="text-orange-500 w-5 h-5" />
                 <div>
-                  <p className="text-sm text-gray-400">Service Area</p>
-                  <p className="text-white">Greater Grand Rapids &amp; West Michigan</p>
+                  <p className="text-sm text-gray-500">Service Area</p>
+                  <p className="text-gray-900">Greater Grand Rapids &amp; West Michigan</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-orange-500 w-5 h-5" />
                 <div>
-                  <p className="text-sm text-gray-400">Email</p>
+                  <p className="text-sm text-gray-500">Email</p>
                   <a href="mailto:info@desireddumpsters.com" className="text-orange-400">info@desireddumpsters.com</a>
                 </div>
               </div>

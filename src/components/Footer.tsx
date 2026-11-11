@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-start gap-2">
               <MapPin size={18} className="text-orange-400 flex-shrink-0 mt-1" />
               <p className="text-navy-100 text-sm">
-                Serving 25+ West Michigan cities including Grand Rapids, Holland, Zeeland, and more.
+                Serving over 20 West Michigan cities including Grand Rapids, Holland, Zeeland, and more.
               </p>
             </div>
           </div>

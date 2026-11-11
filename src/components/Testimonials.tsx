@@ -34,8 +34,8 @@ export const Testimonials: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={testimonial.name} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+          {testimonials.map((testimonial) => (
+            <Card key={testimonial.name}>
               <div className="p-8 space-y-4">
                 <div className="flex gap-1">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
